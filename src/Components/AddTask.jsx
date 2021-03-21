@@ -3,14 +3,12 @@ import { MDBContainer, MDBInputGroup, MDBBtn } from "mdbreact";
 import { useId } from "react-id-generator";
 
 class AddTask extends Component {
-  
- 
-
   render() {
-    const {value, ChangeHandler,SubmitHandler} = this.props;
+    const { value, ChangeHandler, SubmitHandler } = this.props;
     return (
       <React.Fragment>
         <MDBInputGroup
+          require
           value={value}
           onChange={ChangeHandler}
           hint="What is your task For Today ?"

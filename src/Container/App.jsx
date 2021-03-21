@@ -47,19 +47,20 @@ const App = ({}) => {
   const handleSubmit = () => {
     if (thetext.length === 0) {
       toast.error("field is empty !");
-    }
-    try {
-      let newItem = {
-        id: Math.floor(Math.random() * 100),
-        text: thetext,
-        completed: false,
-        color: colorHandler(),
-      };
-      setItem((state) => items.concat(newItem));
-      setText("");
-      toast.success("Your todo List has been Created");
-    } catch (ex) {
-      toast.error("Some thing went wrong with making Todo");
+    } else {
+      try {
+        let newItem = {
+          id: Math.floor(Math.random() * 100),
+          text: thetext,
+          completed: false,
+          color: colorHandler(),
+        };
+        setItem(() => items.concat(newItem));
+        setText("");
+        toast.success("Your todo List has been Created");
+      } catch (ex) {
+        toast.error("Some thing went wrong with making Todo");
+      }
     }
   };
 
