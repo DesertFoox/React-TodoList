@@ -5,7 +5,7 @@ import Tasks from "../Components/tasks";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Filter from "../Components/Filter";
-import Pagination from "../Components/Pagination";
+// import Pagination from "../Components/Pagination";
 
 const App = ({}) => {
   const [items, setItem] = useState([]);
