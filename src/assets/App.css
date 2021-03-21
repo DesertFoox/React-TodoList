@@ -1,0 +1,12 @@
+.bgcol{
+    background: #161826 !important;
+    color: white !important;
+    border-radius: 14px;
+}
+body{
+    background: #5864FF !important;
+}
+.nobg{
+    background: none !important ;
+    color: white !important;
+}
